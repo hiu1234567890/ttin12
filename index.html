@@ -1,15 +1,32 @@
 <html>
+  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh mục bài tập</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Danh mục bài tập</title>
 </head>
+
 <body>
-  <form>
-    <label> Tên đăng nhập : </label> <input type="text" id="username" name="username"> <br>
-    <label> Mật khẩu: </label> <input type="password" id="pw"> <br>
-    <button type="sumbit" id="ok" name="ok" onclick=login()> ĐĂNG NHẬP </button>
-  </form>
-    <script scr="script.js"> </script>
+  <header>THPT Ngô Quyền</header>
+  <nav>
+    <a href="#" onclick="showContent('Contents/gioithieu.html')">giới thiệu bản thân</a>
+    <a href="#" onclick="showContent('Contents/tkb.html')">thời khoá biểu</a>
+    <a href="#" onclick="showContent('Contents/gioithieu.html')">Bài tập 2</a>
+    <a href="#" onclick="showContent('Contents/videotudonghoa.html')">group project</a>
+    <a href="#" onclick="showContent('Contents/bai7nv2.html')">gop y</a>
+  </nav>
+
+  <div class="noidung">
+    <iframe src="Contents/gioithieu.html" id="frame" frameborder="0" width="800" height="600">
+    </iframe>
+  </div>
+
+  <footer>Le Hoai An</footer>
+
+  <script>
+    function showContent(linkToNewSource) {
+      document.getElementById('frame').src = linkToNewSource
+    }
+  </script>
 </body>
-</html>
