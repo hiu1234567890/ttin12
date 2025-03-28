@@ -1,36 +1,106 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI TẬP TIN HỌC 12</title>
+    <link href="style3.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header, .footer {
+            background-color: #d4efdf;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #a2d9ce;
+            padding: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 15px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        .sidebar ul ul {
+            padding-left: 20px;
+            font-weight: normal;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #154360;
+            display: block;
+            padding: 5px 10px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #117a65;
+            color: white;
+        }
+        .main-content {
+            flex: 1;
+            padding: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div>
-    <table border="1">
-      <tr>
-        <th colspan="2">
-          <h1>BÀI TẬP</h1>
-        </th>
-      </tr>
-      <tr style="height: 500px;">
-        <th width="30%">
-          <iframe height="500px" ; width="100%" ; src="/contents/DanhmucBT.html">
-          </iframe>
-        </th>
-        <th width="70%">
-          <iframe width="100%" ; height="500px" ; name="noi_dung" src="GT/GioiThieuBanThan.html">
-          </iframe>
-        </th>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <center>
-            <h1>LÊ TRUNG HIẾU</h1>
-          </center>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <div class="container">
+        <div class="header">HƯỚNG NGHIỆP</div>
+        <div class="content">
+            <div class="sidebar">
+                <ul>
+                    <li>BÀI TẬP
+                        <ul>
+                            <li><a href="Contents/gioithieu.html" target="noidung">Giới thiệu</a></li>
+                            <li><a href="https://www.w3schools.com" target="_blank">THPT Ngô Quyền</a></li>
+                            <li><a href="Contents/tkb.html" target="noidung">Thời khóa biểu</a></li>
+                            <li><a href="Contents/CNTT.html" target="noidung">Hướng nghiệp</a></li>
+                            <li><a href="Contents/ktpm.html" target="noidung">Ngành Kỹ thuật phần mềm</a></li>
+                            <li><a href="Contents/bai7_nv1.html" target="noidung">Góp ý</a></li>
+                            <li><a href="Contents/thamdo.html" target="noidung">Thăm dò ý kiến</a></li>
+                        </ul>
+                    </li>
+                    <li>TÀI LIỆU THAM KHẢO</li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <iframe name="noidung" src="Contents/gioithieu.html"></iframe>
+            </div>
+        </div>
+        <div class="footer">Nguyễn An Phúc</div>
+    </div>
 </body>
-
 </html>
