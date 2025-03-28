@@ -1,33 +1,13 @@
-header {
-  color: black;
-  background-color: #f1f1f1;
-  padding: 20px;
+.header
+{
+  background-color: gray;
+  color: red;
   text-align: center;
+  padding: 20;
 }
-
-footer {
-  color: black;
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-}
-
-nav {
-  overflow: hidden;
-  background-color: black;
-  padding: 50px;
-}
-
-nav a {
+.topnav
+{
   float: left;
   display: block;
-  color: Red;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background-color: #ddd;
-  color: black;
+  
 }
